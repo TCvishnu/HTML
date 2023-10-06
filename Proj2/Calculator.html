@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="icon" href="images/calculate.png" />
+		<title>Calculator</title>
+	</head>
+
+	<body>
+		<script src="script.js"></script>
+		<div class="pageDiv">
+			<div class="box">
+
+				<h2 id="display"></h2>
+				<hr class="ruler">
+				<div>				
+					<button class="numButtons" value="1" onclick="onNumberBtnClick(event)">1</button>
+					<button class="numButtons" value="2" onclick="onNumberBtnClick(event)">2</button>
+					<button class="numButtons" value="3" onclick="onNumberBtnClick(event)">3</button>
+
+					<button class="operatorBtns" value="+" onclick="onOperatorClick(event)">+</button>
+					<button class="operatorBtns" value="-" onclick="onOperatorClick(event)">-</button>
+				</div>
+				<div>
+					<button class="numButtons" value="4" onclick="onNumberBtnClick(event)">4</button>
+					<button class="numButtons" value="5" onclick="onNumberBtnClick(event)">5</button>
+					<button class="numButtons" value="6" onclick="onNumberBtnClick(event)">6</button>
+
+					<button class="operatorBtns" value="*" onclick="onOperatorClick(event)">*</button>
+					<button class="operatorBtns" value="/" onclick="onOperatorClick(event)">/</button>
+				</div>
+				<div>
+					<button class="numButtons" value="7" onclick="onNumberBtnClick(event)">7</button>
+					<button class="numButtons" value="8" onclick="onNumberBtnClick(event)">8</button>
+					<button class="numButtons" value="9" onclick="onNumberBtnClick(event)">9</button>
+
+					<button class="otherBtns" value="(" onclick="onOperatorClick(event)">(</button>
+					<button class="otherBtns" value="." onclick="onOperatorClick(event)">.</button>
+					<button class="otherBtns" value=")" onclick="onOperatorClick(event)">)</button>
+				</div>
+				<div>
+					<button class="numButtons" value="0" onclick="onNumberBtnClick(event)">0</button>
+					<button class="clearBtn" onclick="onClear()">
+					Clear
+					</button>
+					<button class="clearBtn" style="width: 60px" onclick="onDelete()">
+					Del
+					</button>
+					<button class="operatorBtns" style="background-color: rgb(255, 110, 25);"
+					onclick="onClickEqualTo()" onmouseover="equalToMouseOver(event)"
+					onmouseout="equalToMouseOut(event)">
+					=
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
